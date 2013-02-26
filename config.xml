@@ -1,0 +1,12 @@
+<config>
+	<groups>
+		<group name="groupA" neuronsInGroup="10"/>
+		<group name="groupB" neuronsInGroup="10"/>
+		<group name="groupC" neuronsInGroup="10"/>
+	</groups>
+	<connections>
+		<connection source="groupA" output="groupB" excitatory="true"/>
+		<connection source="groupB" output="groupC" excitatory="true"/>
+		<connection source="groupC" output="groupA" excitatory="true"/>
+	</connections>
+</config>
